@@ -1,0 +1,160 @@
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test
+$ git init
+Initialized empty Git repository in F:/GitHub/Test/.git/
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (master)
+$ git add TestABC.java
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   TestABC.java
+
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (master)
+$ git commit -m "This my Test program to learn git"
+[master (root-commit) 5790c18] This my Test program to learn git
+ 1 file changed, 40 insertions(+)
+ create mode 100644 TestABC.java
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (master)
+$ git remote add origin https://github.com/deepuvariyangattil/TestABC.git
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 675 bytes | 337.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/deepuvariyangattil/TestABC/pull/new/master
+remote:
+To https://github.com/deepuvariyangattil/TestABC.git
+ * [new branch]      master -> master
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (master)
+$ git branch -a
+* master
+  remotes/origin/master
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (master)
+$ git fetch
+From https://github.com/deepuvariyangattil/TestABC
+ * [new branch]      subbranch  -> origin/subbranch
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (master)
+$ git branch
+* master
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (master)
+$ git branch -a
+* master
+  remotes/origin/master
+  remotes/origin/subbranch
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (master)
+$ git checkout subbranch
+Switched to a new branch 'subbranch'
+Branch 'subbranch' set up to track remote branch 'subbranch' from 'origin'.
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ git branch
+  master
+* subbranch
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ git status
+On branch subbranch
+Your branch is up to date with 'origin/subbranch'.
+
+nothing to commit, working tree clean
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ git add -a
+error: unknown switch `a'
+usage: git add [<options>] [--] <pathspec>...
+
+    -n, --dry-run         dry run
+    -v, --verbose         be verbose
+
+    -i, --interactive     interactive picking
+    -p, --patch           select hunks interactively
+    -e, --edit            edit current diff and apply
+    -f, --force           allow adding otherwise ignored files
+    -u, --update          update tracked files
+    --renormalize         renormalize EOL of tracked files (implies -u)
+    -N, --intent-to-add   record only the fact that the path will be added later
+    -A, --all             add changes from all tracked and untracked files
+    --ignore-removal      ignore paths removed in the working tree (same as --no-all)
+    --refresh             don't add, only refresh the index
+    --ignore-errors       just skip files which cannot be added because of errors
+    --ignore-missing      check if - even missing - files are ignored in dry run
+    --chmod (+|-)x        override the executable bit of the listed files
+
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ git add -A
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ git status
+On branch subbranch
+Your branch is up to date with 'origin/subbranch'.
+
+nothing to commit, working tree clean
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ git add TestABC.java
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ git status
+On branch subbranch
+Your branch is up to date with 'origin/subbranch'.
+
+nothing to commit, working tree clean
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ git add TestABC.java
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ git status
+On branch subbranch
+Your branch is up to date with 'origin/subbranch'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   TestABC.java
+
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ git commit -m "Added a comment"
+[subbranch bc39f44] Added a comment
+ 1 file changed, 1 insertion(+)
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ git push origin subbranch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 335 bytes | 335.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/deepuvariyangattil/TestABC.git
+   5790c18..bc39f44  subbranch -> subbranch
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$ ^C
+
+DEEPUAISHU@LAPTOP-BL0JM9F9 MINGW64 /f/GitHub/Test (subbranch)
+$

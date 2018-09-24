@@ -1,0 +1,22 @@
+Nisheet@Nisheet MINGW64 ~/desktop/mathguru
+$ git clone https://github.com/deepuvariyangattil/MathGuru.git
+Cloning into 'MathGuru'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 15 (delta 2), reused 12 (delta 1), pack-reused 0
+Unpacking objects: 100% (15/15), done.
+
+Nisheet@Nisheet MINGW64 ~/desktop/mathguru
+$ cd mathguru
+
+Nisheet@Nisheet MINGW64 ~/desktop/mathguru/mathguru (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+Nisheet@Nisheet MINGW64 ~/desktop/mathguru/mathguru (master)
+$ git checkout -b nisheet
+Switched to a new branch 'nisheet'

@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class MathGuru {
     public static void main(String[] args) {
+		//Request for user info
         Scanner scanner = new Scanner(System.in);
         int userSelection, userInput;
         System.out.println("Please select the operation\n");

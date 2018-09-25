@@ -72,6 +72,14 @@ public class MathGuru {
     }
 
     private static void factorial(int userInput) {
+    int fact=1,i;
+    for (i=userInput;i>=1;i--)
+    {
+    fact=fact*(i);
+    }
+    System.out.println(fact);
+
+
     }
 
     private static void fibonacci(int userInput) {

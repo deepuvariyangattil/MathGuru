@@ -43,6 +43,39 @@ public class MathGuru {
         switch (userSelection) {
             case 1:
                 poweroftwocalculator(userInput);
+                import java.util.Scanner;
+
+                class Power
+            {
+                public static void main(String arg[])
+
+             {
+                 int a =2;
+                 long n,r=1;
+
+        Scanner scanner =new Scanner(System.in);
+
+        System.out.println("enter power to calculate 2^");
+
+        n=scanner.nextLong();
+
+        if(n==0)
+        {
+            r =1;
+        }
+        else
+        {
+            for(int i=1;i<=n;i++)
+            {
+                r = r *a;
+            }
+        }
+
+        System.out.println(a+"^"+n+"="+r);
+
+    }
+
+}
                 break;
             case 2:
                 factorial(userInput);

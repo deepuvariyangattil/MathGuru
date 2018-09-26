@@ -103,6 +103,19 @@ public class MathGuru {
     }
 
     private static void fibonacci(int userInput) {
+        int a = 1; 
+int b = 0;
+int temp;
+System.out.println(b);
+
+while(userInput>=1){
+temp = a; //1
+a = a + b; //1
+b = temp; //1 
+
+System.out.print(a + " " + b); 
+userInput--;
+}
     }
 
 }

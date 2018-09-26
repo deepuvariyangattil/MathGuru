@@ -43,39 +43,6 @@ public class MathGuru {
         switch (userSelection) {
             case 1:
                 poweroftwocalculator(userInput);
-                import java.util.Scanner;
-
-                class Power
-            {
-                public static void main(String arg[])
-
-             {
-                 int a =2;
-                 long n,r=1;
-
-        Scanner scanner =new Scanner(System.in);
-
-        System.out.println("enter power to calculate 2^");
-
-        n=scanner.nextLong();
-
-        if(n==0)
-        {
-            r =1;
-        }
-        else
-        {
-            for(int i=1;i<=n;i++)
-            {
-                r = r *a;
-            }
-        }
-
-        System.out.println(a+"^"+n+"="+r);
-
-    }
-
-}
                 break;
             case 2:
                 factorial(userInput);
@@ -102,7 +69,27 @@ public class MathGuru {
 
 
     private static void poweroftwocalculator(int userInput) {
-    }
+        int a =2;
+        long r=1;
+
+        System.out.println("enter power to calculate 2^");
+
+        if(userInput==0)
+        {
+        r =1;
+        }
+        else
+        {
+        for(int i=1;i<=userInput;i++)
+        {
+        r = r *a;
+        }
+        }
+
+        System.out.println(a+"^"+userInput+"="+r);
+
+        }
+    
 
     private static void factorial(int userInput) {
     int fact=1,i;
